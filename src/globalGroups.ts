@@ -73,29 +73,23 @@ export default defineGkdGlobalGroups([
   {
     key: 0,
     name: '开屏广告',
+    desc: '关闭打开应用时的开屏广告',
     order: OPEN_AD_ORDER,
     matchRoot: true,
     actionMaximum: 2,
     matchTime: 10000,
+    fastQuery: true,
     resetMatch: 'app',
     actionMaximumKey: 0,
     rules: [
       {
         key: 0,
-        excludeMatches: [
-          // 防止在应用的搜索页面误触
-          '[text*="搜索"][text.length<6][visibleToUser=true]',
-          '[(text*="搜索" && text.length<6) || vid~="(?is).*search.*" || (desc*="搜索" && desc.length<6)][visibleToUser=true]',
-        ],
+        excludeMatches: '[text*="搜索"][text.length<6][visibleToUser=true]', // 防止在应用的搜索页面误触
         matches: `${COMMON_PREFIX}[(text.length<10&&(text*="跳过"||text*="跳過"||text~="(?is).*skip.*"))||id~="(?is).*tt_splash_skip_btn"||vid~="(?is).*skip.*"||(vid~="(?is).*count.*"&&vid~="(?is).*down.*"&&!(vid~="(?is).*load.*")&&!(vid~="(?is).*hour.*")&&!(vid~="(?is).*minute.*")&&!(vid~="(?is).*timing.*")&&!(vid~="(?is).*add.*")&&!(vid~="(?is).*ead.*"))||desc*="跳过"||desc~="(?is).*skip.*"][!(text~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]")][!(desc~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]")]`,
       },
       {
         key: 1,
-        excludeMatches: [
-          // 防止在应用的搜索页面误触
-          '[text*="搜索"][text.length<6][visibleToUser=true]',
-          '[(text*="搜索" && text.length<6) || vid~="(?is).*search.*" || (desc*="搜索" && desc.length<6)][visibleToUser=true]',
-        ],
+        excludeMatches: '[text*="搜索"][text.length<6][visibleToUser=true]', // 防止在应用的搜索页面误触
         action: 'clickCenter',
         matches:
           'FrameLayout[visibleToUser=true][height>0&&width>0][childCount>=2] > FrameLayout[visibleToUser=true][height>0&&width>0][childCount>2] > @View[clickable=true][height>0&&width>0][visibleToUser=true] + TextView[clickable=true][height>0&&width>0][visibleToUser=true]', // 字节 SDK
@@ -107,6 +101,7 @@ export default defineGkdGlobalGroups([
   {
     key: 1,
     name: '全屏广告',
+    desc: '关闭通用的全屏广告弹窗',
     enable: false,
     order: FULLSCREEN_AD,
     matchTime: 10000,
@@ -127,21 +122,72 @@ export default defineGkdGlobalGroups([
         key: 2,
         name: '快手SDK-类型3',
         matches: `[text="广告"]  <<n ViewGroup +2 ViewGroup[childCount=3][checked=false] >n ImageView${COMMON_PREFIX}`,
+        snapshotUrls: ['https://i.gkd.li/i/13625303'],
       },
       {
         key: 3,
+        name: '快手SDK-类型4',
+        matches:
+          'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] <<(1, 3) ViewGroup +(1, 2, 4) ViewGroup[childCount=2] >(1,3) [text="广告"]',
+        snapshotUrls: [
+          'https://i.gkd.li/import/13259198',
+          'https://i.gkd.li/i/16837806',
+          'https://i.gkd.li/i/13259196',
+          'https://i.gkd.li/i/15362927',
+        ],
+      },
+      {
+        key: 4,
         name: '字节SDK-类型1',
         matches: `[id~="(?is).*tt_reward_full_count_down_after_close"]${COMMON_PREFIX}`,
       },
       {
-        key: 4,
+        key: 5,
         name: '字节SDK-类型2',
         matches: `[vid~="(?is).*ad_flag_source_layout"] + [vid~="(?is).*iv_close"]${COMMON_PREFIX}`,
       },
       {
-        key: 5,
+        key: 6,
         name: '美数SDK-类型1',
         matches: `[vid~="(?is).*ms_activity_sdk_interstitial_cacel"]${COMMON_PREFIX}`,
+      },
+      {
+        key: 7,
+        name: '腾讯广告-类型1',
+        matches:
+          'ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < @FrameLayout[index=1||index=2][text=null][desc=null][id=null] <<n FrameLayout > [name$="FrameLayout"||name$="ImageView"][index=parent.childCount.minus(1)] -(1, 2) FrameLayout[childCount>=2] >(2, 3) [text^="立即" || text="查看详情" || text="了解更多" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+        snapshotUrls: [
+          'https://i.gkd.li/import/12642482',
+          'https://i.gkd.li/import/12646519',
+          'https://i.gkd.li/import/12868369',
+          'https://i.gkd.li/import/12646541', // 华为手机的快照，activityId = 'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity'
+          'https://i.gkd.li/import/13695488',
+          'https://i.gkd.li/import/12643276',
+          'https://i.gkd.li/import/12868503',
+          'https://i.gkd.li/import/12646420',
+          'https://i.gkd.li/import/13259194',
+          'https://i.gkd.li/import/12793180',
+          'https://i.gkd.li/import/12646347',
+          'https://i.gkd.li/import/12793157',
+          'https://i.gkd.li/import/12793177',
+          'https://i.gkd.li/import/12868157', // com.xyhui.start.LoadingActivity
+          'https://i.gkd.li/import/13348807', // com.bbk.launcher2.Launcher
+          'https://i.gkd.li/i/14766902',
+          'https://i.gkd.li/i/16921838',
+          'https://i.gkd.li/i/13264383',
+          'https://i.gkd.li/i/13852448',
+          'https://i.gkd.li/i/14318236',
+          'https://i.gkd.li/i/15400143',
+          'https://i.gkd.li/i/13348663',
+          'https://i.gkd.li/i/13343675',
+          'https://i.gkd.li/i/16670372',
+          'https://i.gkd.li/i/17689929',
+          'https://i.gkd.li/i/14345580',
+          'https://i.gkd.li/i/13246786',
+          'https://i.gkd.li/i/14783306',
+          'https://i.gkd.li/i/15173845',
+          'https://i.gkd.li/import/13784406',
+        ],
       },
     ],
     // 将 Set 转换为数组，并设置 enable 为 false
@@ -150,6 +196,7 @@ export default defineGkdGlobalGroups([
   {
     key: 2,
     name: '局部广告',
+    desc: '关闭通用的局部广告弹窗',
     enable: false,
     order: PARTIAL_AD,
     matchTime: 10000,
@@ -215,6 +262,7 @@ export default defineGkdGlobalGroups([
   {
     key: 3,
     name: '更新提示',
+    desc: '关闭通用的更新提示弹窗',
     enable: false,
     order: UPDATE_PROMPT,
     actionMaximum: 2,
@@ -226,7 +274,7 @@ export default defineGkdGlobalGroups([
       {
         key: 0,
         matches: [
-          `${COMMON_PREFIX}[(text*="内测"||text*="测试版"||text*="新版"||text*="更新"||text*="升级"||text*="体验"||text*="內測"||text*="測試版"||text*="升級"||text*="體驗"||text~="(?is).*Update.*"||text~="(?is).*Upgrade.*"||text~="(?is).*Experience.*")&&text!*="自动"&&text!*="自動"&&(text!*="成功"&&text!*="失败"&&text!*="失敗"&&(text!*="已"||text*="已知")&&text!*="检查更新")]`,
+          `${COMMON_PREFIX}[(text*="内测"||text*="测试版"||text*="新版"||text*="更新"||text*="升级"||text*="体验"||text*="內測"||text*="測試版"||text*="升級"||text*="體驗"||text~="(?is).*Update.*"||text~="(?is).*Upgrade.*"||text~="(?is).*Experience.*")&&text!*="自动"&&text!*="自動"&&(text!*="成功"&&text!*="失败"&&text!*="失敗"&&(text!*="已"||text*="已知")&&text!*="检查更新"&&text!*="卸载")]`,
           `${COMMON_PREFIX}[((((text*="立即"||text*="马上"||text*="并"||text*="现在"||text*="立刻"||text*="抢先")&&(text*="更新"||text*="下载"||text*="安装"||text*="升级"||text*="查看"||text*="体验"))||text="更新"||text="下载"||text="安装"||text="升级"||text="确定"||text="好,升级")&&text.length<6)||((text~="(?is).*(更新.*?)(\\\\(|（)\\\\d+(\\\\.\\\\d+)?(K|M|G|KB|MB|GB)(\\\\)|）)")&&text.length<15)]`,
           `${NEGATION_PART_RULE_TEXT}`,
         ],
@@ -234,7 +282,7 @@ export default defineGkdGlobalGroups([
       {
         key: 1,
         matches: [
-          `${COMMON_PREFIX}[(desc*="内测"||desc*="测试版"||desc*="新版"||desc*="更新"||desc*="升级"||desc*="体验"||desc*="內測"||desc*="測試版"||desc*="升級"||desc*="體驗"||desc~="(?is).*Update.*"||desc~="(?is).*Upgrade.*"||desc~="(?is).*Experience.*")&&desc!*="自动"&&desc!*="自動"&&(desc!*="成功"&&desc!*="失败"&&desc!*="失敗"&&(desc!*="已"||desc*="已知")&&desc!*="检查更新")]`,
+          `${COMMON_PREFIX}[(desc*="内测"||desc*="测试版"||desc*="新版"||desc*="更新"||desc*="升级"||desc*="体验"||desc*="內測"||desc*="測試版"||desc*="升級"||desc*="體驗"||desc~="(?is).*Update.*"||desc~="(?is).*Upgrade.*"||desc~="(?is).*Experience.*")&&desc!*="自动"&&desc!*="自動"&&(desc!*="成功"&&desc!*="失败"&&desc!*="失敗"&&(desc!*="已"||desc*="已知")&&desc!*="检查更新"&&desc!*="卸载")]`,
           `${COMMON_PREFIX}[((((desc*="立即"||desc*="马上"||desc*="并"||desc*="现在"||desc*="立刻"||desc*="抢先")&&(desc*="更新"||desc*="下载"||desc*="安装"||desc*="升级"||desc*="查看"||desc*="体验"))||desc="更新"||desc="下载"||desc="安装"||desc="升级"||desc="确定"||desc="好,升级")&&desc.length<6)||((desc~="(?is).*(更新.*?)(\\\\(|（)\\\\d+(\\\\.\\\\d+)?(K|M|G|KB|MB|GB)(\\\\)|）)")&&desc.length<15)]`,
           `${NEGATION_PART_RULE_DESC}`,
         ],
@@ -242,7 +290,7 @@ export default defineGkdGlobalGroups([
       {
         key: 2,
         matches: [
-          `${COMMON_PREFIX}[(text*="内测"||text*="测试版"||text*="新版"||text*="更新"||text*="升级"||text*="体验"||text*="內測"||text*="測試版"||text*="升級"||text*="體驗"||text~="(?is).*Update.*"||text~="(?is).*Upgrade.*"||text~="(?is).*Experience.*")&&text!*="自动"&&text!*="自動"&&(text!*="成功"&&text!*="失败"&&text!*="失敗"&&(text!*="已"||text*="已知")&&text!*="检查更新")]`,
+          `${COMMON_PREFIX}[(text*="内测"||text*="测试版"||text*="新版"||text*="更新"||text*="升级"||text*="体验"||text*="內測"||text*="測試版"||text*="升級"||text*="體驗"||text~="(?is).*Update.*"||text~="(?is).*Upgrade.*"||text~="(?is).*Experience.*")&&text!*="自动"&&text!*="自動"&&(text!*="成功"&&text!*="失败"&&text!*="失敗"&&(text!*="已"||text*="已知")&&text!*="检查更新"&&text!*="卸载")]`,
           `${COMMON_PREFIX}[((((text*="立即"||text*="马上"||text*="并"||text*="现在"||text*="立刻"||text*="抢先")&&(text*="更新"||text*="下载"||text*="安装"||text*="升级"||text*="查看"||text*="体验"))||text="更新"||text="下载"||text="安装"||text="升级"||text="确定"||text="好,升级")&&text.length<6)||((text~="(?is).*(更新.*?)(\\\\(|（)\\\\d+(\\\\.\\\\d+)?(K|M|G|KB|MB|GB)(\\\\)|）)")&&text.length<15)]`,
           `${NEGATION_PART_RULE_BUTTON}`,
         ],
@@ -250,11 +298,14 @@ export default defineGkdGlobalGroups([
       {
         key: 3,
         matches: [
-          `${COMMON_PREFIX}[(desc*="内测"||desc*="测试版"||desc*="新版"||desc*="更新"||desc*="升级"||desc*="体验"||desc*="內測"||desc*="測試版"||desc*="升級"||desc*="體驗"||desc~="(?is).*Update.*"||desc~="(?is).*Upgrade.*"||desc~="(?is).*Experience.*")&&desc!*="自动"&&desc!*="自動"&&(desc!*="成功"&&desc!*="失败"&&desc!*="失敗"&&(desc!*="已"||desc*="已知")&&desc!*="检查更新")]`,
+          `${COMMON_PREFIX}[(desc*="内测"||desc*="测试版"||desc*="新版"||desc*="更新"||desc*="升级"||desc*="体验"||desc*="內測"||desc*="測試版"||desc*="升級"||desc*="體驗"||desc~="(?is).*Update.*"||desc~="(?is).*Upgrade.*"||desc~="(?is).*Experience.*")&&desc!*="自动"&&desc!*="自動"&&(desc!*="成功"&&desc!*="失败"&&desc!*="失敗"&&(desc!*="已"||desc*="已知")&&desc!*="检查更新"&&desc!*="卸载")]`,
           `${COMMON_PREFIX}[((((desc*="立即"||desc*="马上"||desc*="并"||desc*="现在"||desc*="立刻"||desc*="抢先")&&(desc*="更新"||desc*="下载"||desc*="安装"||desc*="升级"||desc*="查看"||desc*="体验"))||desc="更新"||desc="下载"||desc="安装"||desc="升级"||desc="确定"||desc="好,升级")&&desc.length<6)||((desc~="(?is).*(更新.*?)(\\\\(|（)\\\\d+(\\\\.\\\\d+)?(K|M|G|KB|MB|GB)(\\\\)|）)")&&desc.length<15)]`,
           `${NEGATION_PART_RULE_BUTTON}`,
         ],
       },
+    ],
+    excludeSnapshotUrls: [
+      'https://i.gkd.li/i/17710149', // text!*="卸载"
     ],
     // 将 Set 转换为数组，并设置 enable 为 false
     apps: [...uniqueAppIdsUP].map((id) => ({ id, enable: false })),
@@ -262,6 +313,7 @@ export default defineGkdGlobalGroups([
   {
     key: 4,
     name: '评价提示',
+    desc: '关闭通用的评价提示弹窗',
     enable: false,
     order: REVIEW_PROMPT,
     actionMaximum: 2,
@@ -309,6 +361,7 @@ export default defineGkdGlobalGroups([
   {
     key: 5,
     name: '通知提示',
+    desc: '! 该规则会自动拒绝 APP 一些申请通知提示，如果有影响请关闭',
     enable: false,
     order: NOTIFICATION_PROMPT,
     matchTime: 10000,
@@ -354,6 +407,7 @@ export default defineGkdGlobalGroups([
   {
     key: 6,
     name: '青少年模式',
+    desc: '关闭通用的青少年模式提示弹窗',
     enable: false,
     order: YOUTH_MODE,
     actionMaximum: 2,
