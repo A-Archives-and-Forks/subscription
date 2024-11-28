@@ -22,11 +22,7 @@ jobs:
             src/subscription.ts
 
       - name: Check changed files
-        if: !(
-          github.base_ref == 'custom' && 
-          github.head_ref == 'dev' && 
-          github.event.pull_request.head.repo.full_name == github.repository
-        )
+        if: ${{ !(github.base_ref == 'custom' && github.head_ref == 'dev' && github.event.pull_request.head.repo.full_name == github.repository) }}
         run: |
           for file in ${{ steps.changed_files.outputs.all_changed_files }}; do
             echo "$file was changed"
