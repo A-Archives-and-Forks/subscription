@@ -87,7 +87,6 @@ export default defineGkdApp({
         {
           key: 5,
           activityIds: [
-            'com.baidu.tieba.tblauncher.MainTabActivity',
             'com.baidu.tieba.pb.pb.main.PbActivity',
             'com.baidu.tieba.forum.ForumActivity',
             'com.baidu.tieba.tblauncher.MainTabActivity',
@@ -122,6 +121,7 @@ export default defineGkdApp({
       key: 3,
       name: '局部广告-首页、推荐列表顶部卡片式广告',
       matchTime: 10000,
+      forcedTime: 10000,
       actionMaximum: 1,
       activityIds: [
         'com.baidu.tieba.tblauncher.MainTabActivity',
@@ -133,6 +133,13 @@ export default defineGkdApp({
           matches:
             'RelativeLayout[childCount=2] > @RelativeLayout[childCount=1][clickable=true] > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13060892',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches:
+            '@[clickable=true][vid="obfuscated"][visibleToUser=true] < LinearLayout <4 RelativeLayout +3 LinearLayout >4 [text="小游戏"]',
+          snapshotUrls: 'https://i.gkd.li/i/17943902',
         },
       ],
     },
@@ -202,13 +209,18 @@ export default defineGkdApp({
         {
           key: 0,
           name: '首页右侧悬浮广告-1',
-          activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
+          activityIds: [
+            '.tblauncher.MainTabActivity',
+            '.pb.pb.main.PbActivity',
+          ],
           matches:
-            '@ImageView[clickable=true] - TextView[text="广告"] < RelativeLayout + ImageView',
+            '@ImageView[clickable=true][visibleToUser=true][vid="obfuscated"] - [text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13115167',
-            'https://i.gkd.li/import/13327933', // 原规则在此误触
+            'https://i.gkd.li/i/16622395',
+            'https://i.gkd.li/i/16632851',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/import/13327933',
         },
         {
           key: 1,
@@ -260,17 +272,22 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-贴吧内签到并关闭弹窗',
+      fastQuery: true,
       enable: false,
+      actionMaximum: 1,
       rules: [
         {
           key: 0,
           name: '贴吧页签到',
           activityIds: 'com.baidu.tieba.forum.ForumActivity',
-          matches:
-            '@TextView[text="签到"][visibleToUser=true] <<n WebView[text="frs"]',
+          anyMatches: [
+            '@TextView[text="签到"][visibleToUser=true] <3 View < View <2 View < View < WebView < WebView < FrameLayout < ViewGroup <2 FrameLayout < FrameLayout < [id="android:id/content"]',
+            '@TextView[text="签到"][visibleToUser=true] <5 View < View <2 View < WebView < WebView < FrameLayout < ViewGroup <2 FrameLayout < FrameLayout < [id="android:id/content"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/import/13776801',
             'https://i.gkd.li/i/15087289',
+            'https://i.gkd.li/i/17902156',
           ],
         },
         {
@@ -279,7 +296,8 @@ export default defineGkdApp({
           name: '关闭签到成功弹窗',
           activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
           action: 'back',
-          matches: 'WebView[text="签到弹窗"]',
+          matches:
+            '@WebView[text="签到弹窗"][visibleToUser=true] < WebView < FrameLayout < LinearLayout < RelativeLayout < [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13776424',
             'https://i.gkd.li/i/15087327',
@@ -294,6 +312,7 @@ export default defineGkdApp({
       desc: '关闭首页、吧内游戏推广帖子',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: [
             'com.baidu.tieba.forum.ForumActivity',
@@ -309,6 +328,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16828318',
             'https://i.gkd.li/i/16828401',
             'https://i.gkd.li/i/16828436',
+          ],
+        },
+        {
+          key: 1,
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][vid="obfuscated"] - [text="你可能感兴趣的吧" || text^="本吧的人都在逛"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16914357',
+            'https://i.gkd.li/i/17944680',
           ],
         },
       ],
