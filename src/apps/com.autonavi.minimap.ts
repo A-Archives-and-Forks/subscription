@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '功能类-截屏分享',
-      desc: '关闭截屏时app弹出的分享弹窗',
+      desc: '关闭截屏后的分享弹窗',
       enable: false,
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules:
@@ -17,6 +17,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '通知提示-地图横条广告',
+      desc: '关闭地图页面的横条广告和弹窗提示',
       enable: false,
       fastQuery: true,
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
@@ -39,7 +40,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '全屏广告-广告弹窗',
-      desc: '点击关闭',
+      desc: '关闭欢迎弹窗、签到弹窗和加油优惠券弹窗',
       enable: false,
       fastQuery: true,
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
@@ -72,7 +73,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '局部广告-卡片广告',
-      desc: '点击关闭',
+      desc: '关闭地图页面的卡片式广告和购票优惠提示',
       rules: [
         {
           key: 1,
@@ -95,7 +96,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '权限提示-授权蓝牙',
-      desc: '要求提升室内定位精度时，点击关闭',
+      desc: '关闭室内定位蓝牙授权提示',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,

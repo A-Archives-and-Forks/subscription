@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告',
+      desc: '关闭各种全屏广告弹窗，包括字节广告、会员推广等',
       enable: false,
       activityIds: [
         'com.zmzx.college.search.activity.main.activity.MainActivity',
@@ -77,7 +78,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '分段广告-信息流广告',
-      desc: '包括首页和教程页面等',
+      desc: '关闭首页、教材详情页等位置的信息流广告',
       enable: false,
       activityIds: [
         'com.zmzx.college.search.activity.main.activity.MainActivity',

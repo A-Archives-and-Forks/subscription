@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-首页悬浮窗广告',
+      desc: '关闭首页的全屏悬浮广告',
       enable: false,
       activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
       rules: '[id="com.xiaomi.market:id/webview_container"] >n [text="关闭"]',
@@ -15,6 +16,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '局部广告-应用升级界面顶部广告横幅',
+      desc: '关闭应用升级页面顶部的广告横幅',
       fastQuery: true,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: '[id="com.xiaomi.market:id/iv_close_tip"]',
@@ -23,7 +25,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '功能类-忽略升级',
-      desc: '应用升级界面-自动点击忽略',
+      desc: '点击应用升级提示的[忽略本次]按钮',
       fastQuery: true,
       enable: false,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
@@ -57,7 +59,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '功能类-自动点击[查看全部升级]',
-      desc: '应用升级页面',
+      desc: '自动展开应用升级页面的完整更新列表',
       fastQuery: true,
       enable: false,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',

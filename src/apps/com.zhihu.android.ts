@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '分段广告-信息流广告',
-      desc: '点击关闭-点击内容不感兴趣',
+      desc: '关闭信息流中的广告',
       enable: false,
       fastQuery: true,
       rules: [
@@ -99,7 +99,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '全屏广告-广告弹窗',
-      desc: '点击关闭',
+      desc: '关闭会员页、首页等位置的各类广告弹窗',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -130,7 +130,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '局部广告-回答底部广告',
-      desc: '点击关闭',
+      desc: '关闭回答底部的推广内容和热度提示',
       activityIds: [
         'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
         'com.zhihu.android.app.ui.activity.MainActivity',
@@ -162,6 +162,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '局部广告-悬浮广告',
+      desc: '关闭首页、发现页等位置的悬浮广告和关注提示',
       fastQuery: true,
       activityIds: [
         'com.zhihu.android.app.ui.activity.MainActivity',
@@ -201,7 +202,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '功能类-自动授权',
-      desc: '包括扫码登录授权',
+      desc: '自动确认知乎扫码登录的授权请求',
       enable: false,
       activityIds: 'com.zhihu.android.app.ui.activity.HostActivity',
       rules: [
@@ -214,7 +215,7 @@ export default defineGkdApp({
     {
       key: 101,
       name: '功能类-自动展开回答',
-      desc: '自动点击展开',
+      desc: '自动点击展开被折叠的回答全文',
       enable: false,
       fastQuery: true,
       rules: [

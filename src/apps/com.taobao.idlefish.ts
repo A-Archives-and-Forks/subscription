@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '通知提示',
+      desc: '关闭消息推送开启提示',
       enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -18,7 +19,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-红包弹窗',
-      desc: '点击关闭',
+      desc: '关闭首页红包弹窗广告',
       enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -30,6 +31,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '分段广告-信息流广告',
+      desc: '通过长按然后点击关闭按钮来移除信息流中的广告',
       enable: false,
       activityIds:
         'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
@@ -59,6 +61,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '功能类-自动查看原图',
+      desc: '浏览图片时自动切换至原图模式',
       enable: false,
       activityIds:
         'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',

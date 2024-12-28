@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-信息流广告',
+      desc: '点击广告选项并完成屏蔽操作',
       enable: false,
       rules: [
         {

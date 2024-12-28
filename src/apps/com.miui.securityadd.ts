@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-游戏广告弹窗',
-      desc: '点击X',
+      desc: '关闭游戏加速弹出的活动广告弹窗',
       enable: false,
       rules: [
         {

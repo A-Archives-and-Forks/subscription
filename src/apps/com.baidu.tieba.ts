@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '通知提示-申请消息提醒弹窗',
+      desc: '关闭消息通知开启提示弹窗',
       enable: false,
       fastQuery: true,
       actionMaximum: 1,
@@ -23,7 +24,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-信息流广告',
-      desc: '关闭广告、直播推广',
+      desc: '关闭首页、帖子内的广告和直播推广',
       enable: false,
       fastQuery: true,
       forcedTime: 10000,
@@ -120,6 +121,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-首页、推荐列表顶部卡片式广告',
+      desc: '关闭首页顶部的卡片广告和小游戏推广',
       matchTime: 10000,
       forcedTime: 10000,
       actionMaximum: 1,
@@ -149,6 +151,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '全屏广告-广告弹窗',
+      desc: '关闭会员弹窗、签到弹窗等全屏广告',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,
@@ -200,6 +203,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '局部广告-悬浮小广告',
+      desc: '关闭首页右侧和评论区的悬浮广告',
       matchDelay: 500,
       matchTime: 10000,
       actionMaximum: 1,
@@ -254,6 +258,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '局部广告-[帖子内/吧内]底部悬浮窗',
+      desc: '关闭帖子内和吧内底部的推荐悬浮窗',
       fastQuery: true,
       actionMaximum: 1,
       rules: [
@@ -280,6 +285,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-贴吧内签到并关闭弹窗',
+      desc: '自动进行贴吧签到并关闭签到成功提示',
       fastQuery: true,
       enable: false,
       actionMaximum: 1,
@@ -317,7 +323,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '局部广告-感兴趣的吧推广',
-      desc: '关闭首页、吧内其他贴吧的推广',
+      desc: '关闭首页和吧内的贴吧推荐',
       rules: [
         {
           key: 0,

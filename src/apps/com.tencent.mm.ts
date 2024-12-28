@@ -346,7 +346,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '功能类-自动查看原图/原视频',
-      desc: '自动点击[查看原图]/[查看原视频]按钮',
+      desc: '浏览图片时自动切换至原图模式',
       enable: false,
       fastQuery: true,
       activityIds: ['.ui.chatting.gallery.ImageGalleryUI', '.ui.LauncherUI'],
@@ -497,6 +497,7 @@ export default defineGkdApp({
     {
       key: 19,
       name: '功能类-订阅号-展开更早的消息',
+      desc: '自动展开订阅号历史消息',
       enable: false,
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.timeline.BizTimeLineUI',
@@ -559,6 +560,7 @@ export default defineGkdApp({
     {
       key: 22,
       name: '功能类-付款后自动点击完成/返回商家',
+      desc: '支付完成后自动点击完成或返回商家按钮',
       enable: false,
       fastQuery: true,
       activityIds: 'com.tencent.mm.framework.app.UIPageFragmentActivity',

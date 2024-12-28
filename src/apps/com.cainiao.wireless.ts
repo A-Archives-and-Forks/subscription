@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      desc: '关闭首页和物流页面的全屏推广弹窗',
       enable: false,
       forcedTime: 10000,
       activityIds: [
@@ -55,7 +56,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告',
-      desc: '各个页面的局部广告卡片广告或横幅广告等，包括首页，包裹等',
+      desc: '关闭首页底部横幅、地图底部广告、物流页面横条广告',
       activityIds: [
         'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
@@ -96,7 +97,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '功能类-包裹页面-自动展开更多物流信息',
-      desc: '点击[展开]',
+      desc: '自动展开包裹页面的物流详情信息',
       enable: false,
       fastQuery: true,
       activityIds: 'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',

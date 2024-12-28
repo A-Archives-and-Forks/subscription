@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-软件更新/安装后的用户引导',
+      desc: '自动点击更新或安装后的引导页面跳过按钮',
       enable: false,
       fastQuery: true,
       activityIds: 'com.ct.client.activity.UserGuideActivity',
@@ -16,7 +17,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-浮窗广告',
-      desc: '会出现在首页、查询办理页面',
+      desc: '关闭首页和查询办理页面的浮窗广告',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -44,6 +45,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-弹窗广告',
+      desc: '关闭业务办理页面的全屏推广弹窗',
       enable: false,
       activityIds: [
         'com.ct.client.common.webview.OnlineBusinessWebkitActivity',

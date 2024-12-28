@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
+      desc: '关闭播放界面、歌单页、我的页等位置的各类卡片广告',
       rules: [
         {
           key: 1,
@@ -78,6 +79,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告',
+      desc: '关闭各类全屏广告弹窗，包括网页广告、免流弹窗和签到弹窗',
       enable: false,
       rules: [
         {
@@ -122,7 +124,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-看广告免费听歌弹窗',
-      desc: '点击X',
+      desc: '关闭看广告免费听歌的弹窗',
       enable: false,
       rules: [
         {
@@ -135,7 +137,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-VIP弹窗',
-      desc: '点击关闭',
+      desc: '关闭VIP会员相关弹窗',
       enable: false,
       rules: [
         {
@@ -160,7 +162,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-音质音效弹窗',
-      desc: '推广音质音效相关弹窗，自动点击关闭',
+      desc: '关闭音质音效推广弹窗',
       enable: false,
       rules: [
         {
@@ -190,7 +192,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '分段广告-评论区广告',
-      desc: '点击右下角展开-点击[不感兴趣]',
+      desc: '点击不感兴趣，关闭评论区广告',
       enable: false,
       activityIds:
         'com.tencent.qqmusic.activity.base.FragmentActivityWithMinibar',

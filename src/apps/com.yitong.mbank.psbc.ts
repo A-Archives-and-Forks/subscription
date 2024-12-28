@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-浮窗广告',
+      desc: '关闭首页右侧的悬浮窗广告',
       fastQuery: true,
       activityIds:
         'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',
@@ -16,6 +17,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页广告弹窗',
+      desc: '关闭首页弹出的全屏主题广告',
       enable: false,
       fastQuery: true,
       activityIds:

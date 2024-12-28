@@ -8,7 +8,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-签到成功弹窗',
-      desc: '返回关闭弹窗',
+      desc: '关闭签到成功提示弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-卡片广告',
-      desc: '点击关闭',
+      desc: '关闭帖子底部的推荐关注卡片',
       rules: [
         {
           name: '收藏帖子后底部推荐关注卡片',
@@ -43,6 +43,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '功能类-自动查看原图',
+      desc: '浏览图片时自动切换至原图模式',
       enable: false,
       fastQuery: true,
       activityIds: [

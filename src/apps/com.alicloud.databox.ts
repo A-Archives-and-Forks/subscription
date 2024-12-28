@@ -82,6 +82,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
+      desc: '关闭应用更新提示弹窗',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,

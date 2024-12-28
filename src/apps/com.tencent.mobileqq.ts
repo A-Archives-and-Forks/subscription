@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      desc: '点击跳过应用启动时的开屏广告',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -34,6 +35,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-消息页面顶部广告',
+      desc: '关闭消息页面顶部的横幅广告',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         {
@@ -83,6 +85,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-好友动态广告卡片',
+      desc: '关闭好友动态中的广告卡片',
       matchRoot: true,
       enable: false,
       activityIds: [
@@ -164,6 +167,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-弹窗广告',
+      desc: '关闭各种场景下的全屏弹窗广告，包括频道页面、钱包页面、黄钻页面等',
       enable: false,
       rules: [
         {
@@ -241,6 +245,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示',
+      desc: '关闭应用更新提示弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -268,6 +273,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '分段广告-动态页[好友热播/为你推荐]',
+      desc: '点击并关闭好友热播和推荐内容',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -307,6 +313,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '通知提示',
+      desc: '关闭消息推送开启提示',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -374,6 +381,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '局部广告-浮窗广告',
+      desc: '关闭等级规则页和频道页的浮窗广告',
       activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
       rules: [
         {
@@ -415,7 +423,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-自动查看原图',
-      desc: '查看图片时自动点击原图',
+      desc: '浏览图片时自动切换至原图模式',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -457,6 +465,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '全屏广告-QQ小程序开屏广告',
+      desc: '点击跳过QQ小程序的开屏广告',
       enable: false,
       fastQuery: true,
       actionMaximum: 1,
@@ -481,6 +490,7 @@ export default defineGkdApp({
     {
       key: 20,
       name: '分段广告-钱包页卡片广告',
+      desc: '点击关闭钱包页面的卡片广告',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -548,7 +558,7 @@ export default defineGkdApp({
     {
       key: 24,
       name: '功能类-自动领红包',
-      desc: '自己发的红包、专属红包、口令红包、私聊红包不领',
+      desc: '领取群聊中的普通拼手气红包,不包括自己发的红包、专属红包、口令红包和私聊红包',
       enable: false,
       rules: [
         {
@@ -627,6 +637,7 @@ export default defineGkdApp({
     {
       key: 27,
       name: '局部广告-聊天页面广告',
+      desc: '关闭聊天页面中的关键词触发广告',
       rules: [
         {
           key: 1,
@@ -665,7 +676,7 @@ export default defineGkdApp({
     {
       key: 29,
       name: '局部广告-顶部可能认识的人推荐',
-      desc: '联系人页面推荐，自动点击关闭',
+      desc: '关闭联系人页面顶部的好友推荐',
       rules: [
         {
           fastQuery: true,

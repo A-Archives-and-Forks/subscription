@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '分段广告-卡片广告',
-      desc: '点击卡片右上角按钮->免广告-点击关闭->选择关闭原因-点击不感兴趣',
+      desc: '关闭信息流中的卡片广告',
       enable: false,
       matchRoot: true,
       fastQuery: true,
@@ -65,7 +65,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '功能类-自动查看原图',
-      desc: '查看图片时自动点击原图',
+      desc: '浏览图片时自动切换至原图模式',
       enable: false,
       fastQuery: true,
       activityIds: 'com.coolapk.market.view.photo.PhotoViewActivity',
@@ -75,7 +75,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-应用推荐',
-      desc: '点击关闭[大家还下载了]应用推荐',
+      desc: '关闭搜索结果页面的应用推荐广告',
       rules: [
         {
           fastQuery: true,

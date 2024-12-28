@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '全屏广告-酒店-弹窗广告',
+      desc: '关闭酒店预订页面的全屏弹窗广告',
       enable: false,
       fastQuery: true,
       activityIds: 'com.ume.lib_weex.view.WeexActivity',
@@ -17,6 +18,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '功能类-进入飞行模式-提示弹窗',
+      desc: '关闭进入飞行模式时的提示弹窗',
       enable: false,
       fastQuery: true,
       activityIds: 'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
@@ -27,6 +29,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '局部广告-首页右侧悬浮广告',
+      desc: '关闭首页右侧的悬浮广告',
       fastQuery: true,
       activityIds: 'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
       rules:

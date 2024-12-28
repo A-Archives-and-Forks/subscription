@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '通知提示-关闭花呗,借呗,还款升级,推荐等弹窗',
-      desc: '自动支付成功后的包括升级，开通，推荐的弹窗',
+      desc: '关闭支付成功后的升级、开通、推荐等弹窗',
       enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -45,6 +45,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
+      desc: '关闭应用更新提示弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -79,7 +80,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-设置支付宝小组件',
-      desc: '点击关闭',
+      desc: '关闭支付宝小组件设置提示和推荐',
       enable: false,
       rules: [
         {
@@ -103,6 +104,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '分段广告-小程序-12306',
+      desc: '关闭12306小程序界面的推广广告',
       enable: false,
       activityIds: 'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
       rules: [
@@ -124,6 +126,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-支付后自动点击完成',
+      desc: '支付/充值/提交成功后自动点击完成按钮',
       enable: false,
       fastQuery: true,
       rules: [
@@ -145,7 +148,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '分段广告-出行扫码广告',
-      desc: '点击[展开更多]-点击[对该内容不感兴趣]',
+      desc: '关闭扫码出行页面的推广广告',
       enable: false,
       fastQuery: true,
       activityIds:
@@ -172,6 +175,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '功能类-关闭免密支付开关',
+      desc: '关闭免密支付功能开关',
       enable: false,
       actionMaximum: 1,
       rules: [
@@ -193,7 +197,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '分段广告-服务消息页面-卡片广告',
-      desc: '点击[关闭]-点击[不感兴趣]',
+      desc: '关闭服务消息页面的卡片广告',
       enable: false,
       fastQuery: true,
       activityIds:
@@ -215,7 +219,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '全屏广告-弹窗广告',
-      desc: '点击X',
+      desc: '关闭全屏弹窗广告',
       enable: false,
       rules: [
         {

@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-首页信息流广告',
+      desc: '关闭首页信息流中的广告',
       enable: false,
       activityIds: [
         'com.xuexiaoyi.entrance.main.MainActivity',

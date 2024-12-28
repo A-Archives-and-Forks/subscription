@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '功能类-放弃开启安全守护',
+      desc: '勾选不再提示并点击放弃开启安全守护',
       enable: false,
       fastQuery: true,
       actionMaximum: 1,
@@ -29,7 +30,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '功能类-自动安装/更新应用',
-      desc: '该规则仅适配关闭[应用安全验证]和[安全守护]的情况，可在安装页面右上角设置里关闭，关闭后的风险自行承担',
+      desc: '自动点击安装/更新和完成按钮(需关闭应用安全验证和安全守护)',
       enable: false,
       matchRoot: true,
       fastQuery: true,
@@ -64,7 +65,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '功能类-自动允许应用安装软件',
-      desc: '!该规则存在风险，请您仅在需要且知晓风险并承担后果的情况下启用',
+      desc: '(存在安全风险)自动勾选记住选择并允许应用安装软件',
       enable: false,
       fastQuery: true,
       actionMaximum: 1,
@@ -93,7 +94,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '功能类-备案信息弹窗',
-      desc: '点击[继续安装]',
+      desc: '自动点击备案信息弹窗的继续安装按钮',
       enable: false,
       actionMaximum: 1,
       rules: [
@@ -109,7 +110,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '功能类-无视风险继续安装',
-      desc: '!该规则存在风险，请您仅在需要且知晓风险并承担后果的情况下启用',
+      desc: '(存在安全风险)自动点击无视风险继续安装并授权',
       enable: false,
       actionMaximum: 1,
       fastQuery: true,

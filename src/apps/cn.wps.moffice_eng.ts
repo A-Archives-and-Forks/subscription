@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-首页文档列表广告',
+      desc: '关闭首页文档列表中的广告',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -37,6 +38,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      desc: '关闭登录后弹窗和体验会员提示弹窗',
       enable: false,
       activityIds: [
         'cn.wps.moffice.main.AfterLoginActivity',
@@ -65,6 +67,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
+      desc: '关闭应用更新提示弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -81,7 +84,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-开启WPS云服务',
-      desc: '自动点击不开启',
+      desc: '自动点击不开启云服务',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -108,6 +111,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '分段广告-文档末尾广告',
+      desc: '关闭文档末尾的广告内容',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -131,6 +135,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '局部广告-首页底部广告',
+      desc: '关闭首页底部横幅广告',
       fastQuery: true,
       activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
       rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',

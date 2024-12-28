@@ -73,7 +73,7 @@ export default defineGkdGlobalGroups([
   {
     key: 0,
     name: '开屏广告',
-    desc: '关闭打开应用时的开屏广告',
+    desc: '点击跳过应用启动时的开屏广告',
     order: OPEN_AD_ORDER,
     matchRoot: true,
     actionMaximum: 2,
@@ -262,7 +262,7 @@ export default defineGkdGlobalGroups([
   {
     key: 3,
     name: '更新提示',
-    desc: '关闭通用的更新提示弹窗',
+    desc: '关闭应用更新提示弹窗',
     enable: false,
     order: UPDATE_PROMPT,
     actionMaximum: 2,

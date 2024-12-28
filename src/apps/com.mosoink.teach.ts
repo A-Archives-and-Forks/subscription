@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-班课列表弹窗广告',
+      desc: '关闭班课列表页面的全屏弹窗广告',
       enable: false,
       activityIds: [
         'com.mosoink.teach.MainMenuActivity',

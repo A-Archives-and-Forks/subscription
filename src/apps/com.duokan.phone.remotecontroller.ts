@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-底部横幅广告',
+      desc: '关闭主界面底部的横幅广告',
       activityIds:
         'com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2',
       rules:

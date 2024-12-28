@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-弹窗广告',
+      desc: '关闭各类全屏弹窗广告',
       enable: false,
       activityIds: [
         'com.tencent.qqmusiclite.activity.MainActivity',
@@ -45,6 +46,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '局部广告-banner 广告',
+      desc: '关闭页面内的 banner 广告',
       activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
       enable: false,
       fastQuery: true,

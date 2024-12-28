@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '分段广告-信息流广告',
-      desc: '包括主页,搜索页',
+      desc: '关闭主页、搜索页的信息流广告',
       enable: false,
       fastQuery: true,
       activityIds: [

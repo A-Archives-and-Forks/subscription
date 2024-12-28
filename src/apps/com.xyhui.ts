@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      desc: '关闭各类全屏弹窗广告',
       enable: false,
       rules: [
         {

@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
+      desc: '点击跳过应用启动时的开屏广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -17,6 +18,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '分段广告-列表卡片广告',
+      desc: '自动处理邮件列表中的卡片广告',
       enable: false,
       fastQuery: true,
       activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',

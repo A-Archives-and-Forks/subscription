@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      desc: '各种全屏广告弹窗',
+      desc: '关闭各种全屏弹窗广告，包括会员促销、活动邀请等',
       enable: false,
       rules: [
         {
@@ -111,6 +111,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-消息页面热门活动卡片',
+      desc: '关闭消息页面中的热门活动推广卡片',
       fastQuery: true,
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules: 'View[desc.length>0] +2n FrameLayout > TextView[text="퀺"]',
@@ -119,6 +120,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-悬浮广告',
+      desc: '关闭商品详情页等位置的悬浮广告',
       rules: [
         {
           key: 0,
@@ -136,7 +138,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '通知提示',
-      desc: '自动点击关闭',
+      desc: '关闭消息推送开启提示',
       enable: false,
       fastQuery: true,
       actionMaximum: 1,
@@ -161,6 +163,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '更新提示',
+      desc: '关闭应用更新提示弹窗',
       enable: false,
       fastQuery: true,
       actionMaximum: 1,
@@ -181,7 +184,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '功能类-关闭支付相关推荐开通',
-      desc: '在支付时候出现的小额免密支付，花呗支付等，自动点击关闭和不开通',
+      desc: '关闭支付时的小额免密支付、花呗支付等推荐开通提示',
       enable: false,
       fastQuery: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
@@ -210,6 +213,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '全屏广告-花呗升级报送征信',
+      desc: '关闭花呗升级及征信授权相关弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,

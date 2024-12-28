@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
+      desc: '关闭APP首页出现的全屏弹窗广告',
       enable: false,
       fastQuery: true,
       activityIds: 'com.hnair.airlines.ui.main.MainActivity',

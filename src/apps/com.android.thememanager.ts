@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-广告弹窗',
+      desc: '关闭主题资源页面的广告弹窗',
       enable: false,
       fastQuery: true,
       activityIds: 'com.android.thememanager.ThemeResourceTabActivity',

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '功能类-自动继续安装',
-      desc: 'USB安装应用,点击继续安装',
+      desc: '点击USB安装应用时的【继续安装】按钮',
       enable: false,
       fastQuery: true,
       activityIds: 'com.miui.permcenter.install.AdbInstallActivity',
@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-禁止获取定位',
-      desc: '关闭【允许联网及定位】后，每次打开手机管家都会出现',
+      desc: '点击获取定位权限弹窗的【不同意】按钮',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -44,7 +44,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-使用返回退出时直接点击[退出]',
-      desc: '退出时忽略[体检优化分数]/忽略[存储空间预警]',
+      desc: '退出时自动点击【退出】按钮，跳过体检优化和存储空间预警提示',
       enable: false,
       rules: [
         {
@@ -66,7 +66,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '功能类-高敏感权限自动确定',
-      desc: '勾选[我已知晓可能存在的风险]-10s后点击[确定]',
+      desc: '自动处理高敏感权限申请：勾选风险提示并延迟10秒后点击确定',
       enable: false,
       fastQuery: true,
       activityIds: [

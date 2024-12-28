@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 10,
       enable: false,
       name: '功能类-授权第三方应用访问文件夹',
-      desc: '自动点击【使用此文件夹】->【允许】',
+      desc: '(存在安全风险)自动点击使用此文件夹并允许访问权限',
       activityIds: 'com.android.documentsui.picker.PickActivity',
       rules: [
         {

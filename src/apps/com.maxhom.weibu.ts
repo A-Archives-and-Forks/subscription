@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '分段广告-交友页面底部广告',
+      desc: '关闭交友页面底部出现的广告',
       enable: false,
       activityIds: [
         'com.maxhom.weibu.tool.home.activity.NewMainActivity',
@@ -50,6 +51,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '通知提示-漂流瓶页面提示弹窗',
+      desc: '关闭漂流瓶功能页面的各类提示弹窗',
       enable: false,
       fastQuery: true,
       activityIds: [

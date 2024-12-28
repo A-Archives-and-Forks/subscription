@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-视频播放-跳过广告',
+      desc: '点击跳过广告按钮',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -35,6 +36,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-视频播放-赞助商广告',
+      desc: '关闭视频播放中的赞助商广告',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -52,7 +54,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-会员广告',
-      desc: '包括首页信息流里的会员广告',
+      desc: '关闭首页和视频页的会员广告提示',
       enable: false,
       activityIds: [
         'com.google.android.apps.youtube.app.watchwhile.MainActivity',
@@ -69,7 +71,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '功能类-自动翻译评论',
-      desc: '评论区自动点击[翻译成中文]',
+      desc: '点击评论区的翻译成中文按钮',
       enable: false,
       rules: [
         {

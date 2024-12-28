@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-动态推荐广告卡片',
-      desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
+      desc: '关闭动态页面的广告卡片',
       enable: false,
       fastQuery: true,
       matchDelay: 5000,
@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '分段广告-视频卡片广告',
-      desc: '包括 视频底部与评论区中间卡片式广告, 视频详情页下方推广, 首页推荐视频卡片广告',
+      desc: '关闭视频流中的广告卡片，包括视频底部、评论区中间、详情页下方等位置',
       enable: false,
       activityIds: [
         'tv.danmaku.bili.MainActivityV2',
@@ -102,7 +102,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-视频页广告',
-      desc: '领取大会员月卡,B站免流星卡',
+      desc: '关闭视频页面的会员推广弹窗和免流星卡广告',
       fastQuery: true,
       rules: [
         {
@@ -133,7 +133,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '局部广告-直播间卡片广告',
-      desc: '点击关闭',
+      desc: '关闭直播间的底部售卖卡片和关注/投喂弹窗',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -159,7 +159,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '分段广告-搜索结果广告',
-      desc: '点击右下角[菜单]-点击[不感兴趣]',
+      desc: '关闭搜索结果中的广告内容',
       enable: false,
       fastQuery: true,
       activityIds: 'com.bilibili.search2.main.BiliMainSearchActivity',
@@ -186,7 +186,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '功能类-自动关闭故事模式',
-      desc: '播放视频时退出竖屏模式',
+      desc: '退出视频播放时的竖屏故事模式',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,

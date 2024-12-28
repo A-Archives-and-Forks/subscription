@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-云存储空间不足弹窗',
+      desc: '点击云存储空间不足提示弹窗中的"以后再说"按钮',
       enable: false,
       activityIds:
         'com.miui.cloudservice.hybrid.SignDeductDialogHybridActivity',

@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-支付完成界面广告卡片',
+      desc: '关闭支付完成页面底部的广告卡片',
       enable: false,
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
@@ -26,7 +27,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '全屏广告-天天签到-获得新勋章提示',
-      desc: '点击左上角返回',
+      desc: '关闭获得新勋章提示弹窗',
       enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -42,6 +43,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '全屏广告-我的页面-广告弹窗',
+      desc: '关闭我的页面中的全屏广告弹窗',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,
@@ -53,7 +55,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '全屏广告-领取优惠弹窗',
-      desc: '点击X',
+      desc: '关闭优惠券领取弹窗',
       enable: false,
       rules: [
         {

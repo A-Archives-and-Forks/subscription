@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-信息流广告',
-      desc: '点击右上角关闭,点击我不喜欢',
+      desc: '关闭信息流中的广告',
       enable: false,
       activityIds: [
         'com.twitter.app.main.MainActivity',
@@ -82,6 +82,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '评价提示-评价弹窗',
+      desc: '点击关闭应用评价弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -94,6 +95,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '功能类-自动点击翻译',
+      desc: '点击推文下方的"翻译"按钮',
       enable: false,
       fastQuery: true,
       activityIds: 'com.twitter.tweetdetail.TweetDetailActivity',
@@ -106,6 +108,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '功能类-自动点击"显示更多帖子"',
+      desc: '点击时间线底部的"显示更多帖子"按钮',
       enable: false,
       fastQuery: true,
       activityIds: 'com.twitter.app.main.MainActivity',

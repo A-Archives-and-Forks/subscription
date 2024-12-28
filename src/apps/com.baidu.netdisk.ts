@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-活动弹窗',
-      desc: '关闭各种活动弹窗信息',
+      desc: '关闭VIP推广、一刻相册推广、幸运券包等活动弹窗',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -39,7 +39,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-续费横幅提示',
-      desc: '关闭续费横幅提示',
+      desc: '关闭首页续费提醒横幅',
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [
@@ -52,7 +52,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '局部广告-右下角悬浮卡片',
-      desc: '点击关闭',
+      desc: '关闭首页右下角悬浮广告卡片',
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [
