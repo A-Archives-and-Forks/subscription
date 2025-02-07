@@ -91,6 +91,14 @@ export default defineGkdApp({
             '@ImageView < ViewGroup[clickable=true] -2 * > View[text^="高德购票" && text$="优惠"] <<n [vid="mapInteractiveRelativeLayout"]',
           snapshotUrls: 'https://i.gkd.li/i/16960157',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            '@[clickable=true] > [visibleToUser=true][text="关闭"] <<n [vid="ajx_view_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/18627401',
+        },
       ],
     },
     {

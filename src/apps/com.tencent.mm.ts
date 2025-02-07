@@ -291,7 +291,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
+          preKeys: [0, 1],
           key: 2,
           name: '点击「不感兴趣」',
           excludeMatches: '[text="感谢你的反馈"][visibleToUser=true]',
@@ -299,6 +299,9 @@ export default defineGkdApp({
             '[text*="广告"&&text.length<5] <n View < View >n [text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/17113565', // 在某些情况下，点击“不感兴趣”会导致无法执行下一步操作
+            'https://i.gkd.li/i/18702161',
+            'https://i.gkd.li/i/18702159',
+            'https://i.gkd.li/i/18702157',
           ],
         },
         {

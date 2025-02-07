@@ -28,13 +28,29 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-首页右侧悬浮广告',
-      desc: '关闭首页右侧的悬浮广告',
-      fastQuery: true,
-      activityIds: 'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
-      rules:
-        '@[id="com.umetrip.android.msky.app:id/iv_close_envelope"] + [id="com.umetrip.android.msky.app:id/media_view_envelope"]',
-      snapshotUrls: 'https://i.gkd.li/import/12783264',
+      name: '局部广告-首页广告',
+      desc: '关闭首页的局部广告',
+      rules: [
+        {
+          key: 0,
+          name: '右侧悬浮广告',
+          fastQuery: true,
+          activityIds:
+            'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
+          matches:
+            '@[id="com.umetrip.android.msky.app:id/iv_close_envelope"] + [id="com.umetrip.android.msky.app:id/media_view_envelope"]',
+          snapshotUrls: 'https://i.gkd.li/import/12783264',
+        },
+        {
+          key: 1,
+          name: '底部横幅广告',
+          fastQuery: true,
+          activityIds:
+            'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
+          matches: '[vid="iv_bottomOperateClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/18702163',
+        },
+      ],
     },
   ],
 });

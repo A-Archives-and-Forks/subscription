@@ -61,11 +61,12 @@ export default defineGkdApp({
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
       ],
       rules:
-        '@[desc="不用了，谢谢" || desc="关闭"][visibleToUser=true] <<n [vid="bottom_ui_container" || vid="custom" || vid="loading_layout"]',
+        '@[desc="不用了，谢谢" || desc="关闭" || desc="Close"][visibleToUser=true] <<n [vid="bottom_ui_container" || vid="custom"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12877357',
         'https://i.gkd.li/i/13797512',
         'https://i.gkd.li/i/18017075',
+        'https://i.gkd.li/i/18549944',
       ],
     },
     {
