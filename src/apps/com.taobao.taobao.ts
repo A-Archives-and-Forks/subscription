@@ -117,6 +117,16 @@ export default defineGkdApp({
             '@ImageView[desc="图片"][childCount=0][clickable=true][visibleToUser=true] <<n [vid="poplayer_native_state_id"]',
           snapshotUrls: 'https://i.gkd.li/i/18218537',
         },
+        {
+          key: 9,
+          activityIds: 'com.taobao.browser.BrowserActivity',
+          matches:
+            'WebView[text="红包签到"] > [id="ice-container"] >(3,4) View[childCount=3] > [name$="Image" || name$="Button"][text*="jpg" || text="关闭"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18587158',
+            'https://i.gkd.li/i/18587159',
+          ],
+        },
       ],
     },
     {
