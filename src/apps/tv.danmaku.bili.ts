@@ -91,6 +91,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18274380',
             'https://i.gkd.li/i/18292926',
             'https://i.gkd.li/i/18296940',
+            'https://i.gkd.li/i/18306839',
           ],
         },
         {
@@ -99,7 +100,10 @@ export default defineGkdApp({
           name: '点击关闭',
           fastQuery: true,
           matches: '[vid="close_dislike"]',
-          snapshotUrls: 'https://i.gkd.li/i/17675894',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17675894',
+            'https://i.gkd.li/i/18587456',
+          ]
         },
       ],
     },
