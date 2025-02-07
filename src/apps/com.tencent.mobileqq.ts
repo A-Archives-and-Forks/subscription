@@ -578,7 +578,7 @@ export default defineGkdApp({
     },
     {
       key: 24,
-      name: '功能类-自动领红包',
+      name: '功能类-自动领取群聊红包',
       desc: '领取群聊中的普通拼手气红包,不包括自己发的红包、专属红包、口令红包和私聊红包',
       enable: false,
       rules: [
@@ -587,10 +587,13 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
-            'ImageView[childCount=0] < RelativeLayout < FrameLayout +2 LinearLayout >3 @ViewGroup[clickable=true][childCount=5][getChild(3).text!="已领取"] + TextView[text="拼手气红包"]',
+            'ImageView[childCount=0] < RelativeLayout < FrameLayout +2 LinearLayout >3 @ViewGroup[clickable=true][childCount=5][!(getChild(4).text^="已")] + TextView[text="拼手气红包"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7a933a7f-dc5a-4eb7-8a6f-fe3cc4e8fb5e',
-          snapshotUrls: 'https://i.gkd.li/i/14221309',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14221309',
+            'https://i.gkd.li/i/18574530',
+          ]
         },
         {
           preKeys: [0],
