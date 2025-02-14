@@ -30,19 +30,40 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-美食大礼包弹窗',
-      fastQuery: true,
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12642310',
-    },
-    {
-      key: 4,
-      name: '全屏广告-酒店提前订弹窗',
-      fastQuery: true,
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12642319',
+      name: '全屏广告-各类弹窗广告',
+      rules: [
+        {
+          key: 0,
+          name: '美食大礼包弹窗',
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12642310',
+        },
+        {
+          key: 1,
+          name: '酒店提前订弹窗',
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: '[id="lottie_box"] + TextView[id=null][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12642319',
+        },
+        {
+          key: 2,
+          name: '打车界面弹窗广告',
+          fastQuery: true,
+          activityIds: [
+            'com.baidu.baidumaps.MapsActivity',
+            'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
+          ],
+          matches:
+            'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12909300',
+            'https://i.gkd.li/i/12930699',
+          ],
+        },
+      ],
     },
     {
       key: 5,
@@ -74,21 +95,6 @@ export default defineGkdApp({
             'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/12909299',
         },
-      ],
-    },
-    {
-      key: 6,
-      name: '全屏广告-打车界面弹窗广告',
-      fastQuery: true,
-      activityIds: [
-        'com.baidu.baidumaps.MapsActivity',
-        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-      ],
-      rules:
-        'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12909300',
-        'https://i.gkd.li/i/12930699',
       ],
     },
     {
