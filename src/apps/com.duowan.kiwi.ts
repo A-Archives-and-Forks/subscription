@@ -62,7 +62,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '其他-root提示',
+      name: '通知提示-root提示',
       desc: '点击确认',
       fastQuery: true,
       matchTime: 10000,

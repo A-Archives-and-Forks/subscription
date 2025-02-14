@@ -322,7 +322,7 @@ export default defineGkdApp({
     },
     {
       key: 20,
-      name: '其他-登录提现页面点击[跳过]',
+      name: '通知提示-登录提现页面点击[跳过]',
       rules: [
         {
           fastQuery: true,

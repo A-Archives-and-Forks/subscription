@@ -39,7 +39,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '其他-关闭[发现新截图]提示',
+      name: '通知提示-关闭[发现新截图]提示',
       rules: [
         {
           fastQuery: true,
