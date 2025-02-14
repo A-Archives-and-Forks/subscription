@@ -44,21 +44,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 3,
-      name: '更新提示',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: '.homepage.Homepage',
-          matches: '@ImageView[id="com.duowan.kiwi:id/upgrade_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/13440833',
-        },
-      ],
-    },
-    {
       key: 4,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
