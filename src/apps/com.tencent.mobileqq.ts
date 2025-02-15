@@ -685,6 +685,7 @@ export default defineGkdApp({
     {
       key: 28,
       name: '功能类-授权登录时关闭获取QQ好友关系',
+      desc: '自动点击关闭获取QQ好友关系',
       enable: false,
       rules: [
         {

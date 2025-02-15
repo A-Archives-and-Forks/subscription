@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-首页红包弹窗',
-      desc: '点击关闭',
+      desc: '关闭首页弹出的各类红包广告弹窗',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,
@@ -36,7 +36,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '局部广告-首页左侧红包悬浮控件',
-      desc: '点击关闭',
+      desc: '关闭首页左侧悬浮的红包广告控件',
       enable: false,
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
@@ -53,7 +53,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-推荐关注',
-      desc: '自动点击"关闭/隐藏"',
+      desc: '关闭各页面的推荐关注提示',
       enable: false,
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
@@ -83,6 +83,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '全屏广告-直播间广告',
+      desc: '关闭直播间的全屏广告',
       enable: false,
       rules: [
         {

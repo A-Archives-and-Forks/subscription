@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-卡片广告',
+      desc: '关闭卡片式广告',
       rules: [
         {
           activityIds: 'com.xiaomi.smarthome.SmartHomeMainActivity',

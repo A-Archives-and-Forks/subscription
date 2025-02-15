@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-活动弹窗',
+      desc: '关闭各页面的活动弹窗广告',
       enable: false,
       fastQuery: true,
       matchTime: 10000,

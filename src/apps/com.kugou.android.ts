@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      desc: '点击跳过应用启动时的开屏广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -36,6 +37,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
+      desc: '关闭播放页面的各种卡片广告',
       matchRoot: true,
       rules: [
         {
@@ -94,6 +96,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
+      desc: '关闭VIP会员相关弹窗',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,
@@ -125,7 +128,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-[看广告免费听歌]弹窗',
-      desc: '点击关闭',
+      desc: '点击关闭看广告免费听歌的弹窗',
       enable: false,
       rules: [
         {
@@ -138,7 +141,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-[开启音乐DJ]弹窗',
-      desc: '勾选[今日不再提醒]-点击[关闭]',
+      desc: '勾选[今日不再提醒]并关闭音乐DJ弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -161,7 +164,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-悬浮广告',
-      desc: '点击关闭',
+      desc: '关闭各界面的悬浮广告',
       rules: [
         {
           matchTime: 10000,
@@ -180,7 +183,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-签到弹窗',
-      desc: '点击关闭',
+      desc: '关闭金币中心的签到弹窗',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,
@@ -201,6 +204,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '功能类-自动关闭速听模式',
+      desc: '自动关闭播放界面的速听模式',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,

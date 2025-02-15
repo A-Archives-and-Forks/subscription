@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-红包弹窗',
+      desc: '关闭各类红包弹窗广告',
       enable: false,
       rules: [
         {
@@ -60,6 +61,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-活动弹窗',
+      desc: '关闭各类全屏活动弹窗广告',
       enable: false,
       fastQuery: true,
       rules: [
@@ -112,6 +114,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-付款后弹窗广告',
+      desc: '关闭支付完成后的广告弹窗',
       enable: false,
       rules: [
         {
@@ -126,6 +129,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-吃货卡续费弹窗',
+      desc: '关闭吃货卡到期续费提示弹窗',
       enable: false,
       rules: [
         {
@@ -140,6 +144,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-首页底部浮窗广告',
+      desc: '关闭首页底部的悬浮广告',
       rules: [
         {
           key: 0,

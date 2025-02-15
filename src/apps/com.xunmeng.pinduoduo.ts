@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      desc: '关闭应用更新提示弹窗',
       enable: false,
       matchTime: 10000,
       actionMaximum: 1,
@@ -23,6 +24,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      desc: '关闭各类全屏弹窗广告，包括活动弹窗、红包弹窗等',
       enable: false,
       rules: [
         {
@@ -119,7 +121,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '局部广告-悬浮广告',
-      desc: '点击关闭',
+      desc: '关闭各种悬浮广告',
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
@@ -159,6 +161,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '功能类-多多视频每日自动签到',
+      desc: '自动点击签到按钮并关闭签到后的弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -214,6 +217,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-发送图片时自动勾选原图',
+      desc: '发送图片时自动勾选原图选项',
       enable: false,
       fastQuery: true,
       rules: [
@@ -254,6 +258,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '权限提示-通知权限',
+      desc: '关闭通知权限申请弹窗',
       enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -308,6 +313,7 @@ export default defineGkdApp({
     {
       key: 20,
       name: '全屏广告-登录提现页面点击[跳过]',
+      desc: '自动点击登录提现页面的跳过按钮',
       enable: false,
       rules: [
         {

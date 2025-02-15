@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      desc: '关闭应用更新提示弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -38,6 +39,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-浮窗广告',
+      desc: '关闭各页页的浮窗广告',
       rules: [
         {
           key: 0,
@@ -60,7 +62,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '全屏广告-竖屏视频广告',
-      desc: '点击右上角[更多]图标按钮,点击不感兴趣',
+      desc: '关闭竖屏视频广告',
       enable: false,
       activityIds: 'com.ss.android.ugc.detail.activity.TikTokActivity',
       rules: [
@@ -93,7 +95,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '分段广告-信息流广告',
-      desc: '点击右上角x按钮,点击[不感兴趣]',
+      desc: '关闭信息流广告',
       enable: false,
       fastQuery: true,
       activityIds: [
@@ -129,6 +131,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '局部广告-底部话题推荐弹窗',
+      desc: '关闭底部话题推荐弹窗',
       rules: [
         {
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
@@ -167,7 +170,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '局部广告-底部热榜弹窗',
-      desc: '点击X',
+      desc: '关闭底部热榜弹窗',
       rules: [
         {
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
@@ -178,45 +181,34 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-[关联抖音账号]弹窗',
-      desc: '点击关闭',
+      name: '全屏广告-广告弹窗',
+      desc: '关闭各种广告弹窗，包括关联抖音账号、默认进入发现频道、全屏广告弹窗等',
       enable: false,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
+          key: 0,
+          name: '关联抖音账号弹窗',
+          actionMaximum: 1,
+          resetMatch: 'app',
           fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           matches: '@[desc="关闭"] + [text^="关联"]',
           snapshotUrls: 'https://i.gkd.li/i/14717889',
         },
-      ],
-    },
-    {
-      key: 17,
-      name: '功能类-[下次打开APP默认进入发现频道]弹窗',
-      desc: '点击取消',
-      enable: false,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
         {
+          key: 1,
+          name: '默认进入发现频道弹窗',
+          actionMaximum: 1,
+          resetMatch: 'app',
           fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           action: 'back',
           matches: '[text^="下次打开APP默认进入"]',
           snapshotUrls: 'https://i.gkd.li/i/15102876',
         },
-      ],
-    },
-    {
-      key: 18,
-      name: '全屏广告-弹窗广告',
-      desc: '点击关闭',
-      enable: false,
-      rules: [
         {
-          key: 0,
+          key: 2,
+          name: '全屏广告弹窗-类型1',
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
@@ -226,7 +218,8 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15314921',
         },
         {
-          key: 1,
+          key: 3,
+          name: '全屏广告弹窗-类型2',
           fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
