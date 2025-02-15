@@ -252,22 +252,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 16,
-      name: '青少年模式',
-      desc: '点击[我知道了]',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: '.ui.activity.HomeActivity',
-          matches:
-            '[text="青少年模式"] < FrameLayout +5 ViewGroup [text="我知道了"]',
-          snapshotUrls: 'https://i.gkd.li/i/13809053',
-        },
-      ],
-    },
-    {
       key: 17,
       name: '权限提示-通知权限',
       actionMaximum: 1,
