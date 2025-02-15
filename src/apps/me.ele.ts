@@ -157,27 +157,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 8,
-      name: '权限提示-定位权限',
-      desc: '点击关闭',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
-      rules: [
-        {
-          key: 0,
-          matches: '[text="去开启"] + [id="me.ele:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13710588',
-        },
-        {
-          key: 1,
-          matches: '[text="去开启"] + [id="me.ele:id/close_tips"]',
-          snapshotUrls: 'https://i.gkd.li/i/13710585',
-        },
-      ],
-    },
   ],
 });
