@@ -96,22 +96,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 13,
-      name: '评价提示-请求好评弹窗',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
-          matches:
-            '@[id="com.greenpoint.android.mc10086.activity:id/close_img"][desc="关闭"] - RelativeLayout >(2) [text$="好评"]',
-          snapshotUrls: 'https://i.gkd.li/i/12662345',
-        },
-      ],
-    },
-    {
       key: 14,
       name: '权限提示-通讯录权限申请弹窗',
       desc: '点击取消',
