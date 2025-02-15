@@ -55,8 +55,6 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '[text="查看翻译"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/e92702d8-8349-4718-aa4d-664bf3d2f6e5',
           snapshotUrls: 'https://i.gkd.li/i/14093211',
         },
         {
@@ -64,8 +62,6 @@ export default defineGkdApp({
           excludeMatches: '[text="查看翻译"][clickable=true]',
           matches:
             '[text$="查看翻译"][clickable=false][desc!=null][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/7d6da15b-1c3f-4160-a2d3-d8223bc55132',
           snapshotUrls: [
             'https://i.gkd.li/i/14784095',
             'https://i.gkd.li/i/16776676', // 避免误触

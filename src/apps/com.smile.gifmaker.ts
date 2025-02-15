@@ -87,8 +87,6 @@ export default defineGkdApp({
           activityIds:
             'com.kuaishou.live.core.basic.activity.LiveSlideActivity',
           matches: '[visibleToUser=true][text="幸运奖池"] <<n [vid="webView"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/338df1c2-8789-435b-8970-c837b00fc0f5',
           snapshotUrls: 'https://i.gkd.li/i/15629334',
         },
       ],

@@ -44,7 +44,6 @@ export default defineGkdApp({
           fastQuery: true,
           matches:
             '@ImageView[clickable=true][visibleToUser=true] + ViewGroup >2 [text="广告"]',
-          exampleUrls: 'https://e.gkd.li/cfd83f2b-580d-4659-8966-eb5f4fe21ecd',
           snapshotUrls: 'https://i.gkd.li/i/16939767',
         },
         {
@@ -53,7 +52,6 @@ export default defineGkdApp({
           fastQuery: true,
           matches:
             '@ImageView[clickable=true][visibleToUser=true][childCount=0][index=1] <2 ViewGroup[childCount=2] < FrameLayout < FrameLayout < [vid="big_live_actions_layout"]',
-          exampleUrls: 'https://e.gkd.li/cfd83f2b-580d-4659-8966-eb5f4fe21ecd',
           snapshotUrls: 'https://i.gkd.li/i/16939767',
         },
         {
@@ -62,7 +60,6 @@ export default defineGkdApp({
           fastQuery: true,
           matches:
             '@ImageView[clickable=true][visibleToUser=true][childCount=0] - FrameLayout >2 [text="去看看" || text="立即匹配"]',
-          exampleUrls: 'https://e.gkd.li/942ee7a5-43e1-4709-b967-7af1a6900e4c',
           snapshotUrls: [
             'https://i.gkd.li/i/14668232',
             'https://i.gkd.li/i/18032754',

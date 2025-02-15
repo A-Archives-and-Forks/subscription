@@ -10,7 +10,6 @@ export default defineGkdApp({
       activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
       rules:
         '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',
-      exampleUrls: 'https://e.gkd.li/772a24be-ca12-459f-8abf-e9573cde3f56',
       snapshotUrls: 'https://i.gkd.li/i/12668813',
     },
     {
@@ -24,7 +23,6 @@ export default defineGkdApp({
           key: 0, // 无`activityId`
           matches: '[vid="iv_cancel"]',
           fastQuery: true,
-          exampleUrls: 'https://e.gkd.li/5f628895-e214-4a0b-8344-14f3d8c20807',
           snapshotUrls: 'https://i.gkd.li/i/16761285',
         },
         {
@@ -32,7 +30,6 @@ export default defineGkdApp({
           activityIds: '.guide.CancelAdShowCnGuidePurchaseActivity',
           matches: '[vid="iv_drop_cnl_close"]',
           fastQuery: true,
-          exampleUrls: 'https://e.gkd.li/e9a6775a-be51-4aca-b3cd-0b496efe2f0c',
           snapshotUrls: 'https://i.gkd.li/i/17002087',
         },
       ],
@@ -46,7 +43,6 @@ export default defineGkdApp({
           activityIds: '.mainmenu.mainactivity.MainActivity',
           matches:
             'RelativeLayout[vid="rl_screenshot"] + ImageView[vid="iv_esc"]',
-          exampleUrls: 'https://e.gkd.li/c66080aa-1758-4a69-9752-aa1373d7f2b5',
           snapshotUrls: 'https://i.gkd.li/i/16975714',
         },
       ],

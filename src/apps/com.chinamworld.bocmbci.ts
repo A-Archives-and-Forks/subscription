@@ -17,7 +17,6 @@ export default defineGkdApp({
           activityIds:
             'com.boc.bocsoft.mobile.bocmobile.buss.system.main.ui.MainActivity',
           matches: '@[desc="关闭"] > [vid="btn_action"]',
-          exampleUrls: 'https://e.gkd.li/988dbaff-68b3-499a-8736-a6e5b3364ed9',
           snapshotUrls: 'https://i.gkd.li/i/17691747',
         },
       ],

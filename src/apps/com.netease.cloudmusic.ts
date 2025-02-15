@@ -19,8 +19,6 @@ export default defineGkdApp({
           excludeActivityIds:
             'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity', // 排除评论区，避免节点被遮罩时误触，评论区广告规则见groups key 13
           matches: '[vid="adTagView"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/a603ceca-7e89-4b1f-9e17-508c583b32d8',
           snapshotUrls: [
             'https://i.gkd.li/i/13859634',
             'https://i.gkd.li/i/12829964',
@@ -34,8 +32,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.netease.cloudmusic.activity.MainActivity',
           matches: '[vid="tag_ad_banner"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/b14cda2e-27e5-4a91-8037-3ccbf1f9d0da',
           snapshotUrls: 'https://i.gkd.li/i/13927753',
         },
         {
@@ -90,8 +86,6 @@ export default defineGkdApp({
           activityIds: 'com.netease.cloudmusic.activity.MainActivity',
           matches:
             '[id="com.netease.cloudmusic:id/resource_view"] > [id="com.netease.cloudmusic:id/close_btn"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/827ebe8b-f3c6-4068-8d31-11d5b2578680',
           snapshotUrls: 'https://i.gkd.li/i/12745666',
         },
         {
@@ -318,8 +312,6 @@ export default defineGkdApp({
           activityIds:
             'com.netease.cloudmusic.module.login.LoginPermissionActivity',
           matches: '[text="授权登录"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/f2aa603b-d1d1-4f92-86ae-e311e79a011d',
           snapshotUrls: 'https://i.gkd.li/i/14830218',
         },
       ],
@@ -337,8 +329,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.activity.MainActivity',
           matches: '@ImageView[clickable=true] +7 [text="查看我的勋章"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/39e34e7d-eae3-4a54-9794-97c2528d13fb',
           snapshotUrls: 'https://i.gkd.li/i/14926750',
         },
         {
@@ -347,7 +337,6 @@ export default defineGkdApp({
           activityIds: '.activity.MainActivity',
           matches:
             'ImageView[visibleToUser=true][childCount=0] < @ViewGroup[clickable=true][childCount=1] + [text$="获得该徽章"]',
-          exampleUrls: 'https://e.gkd.li/0d44b836-c0d8-4cdc-82d9-175eef8cdfc4',
           snapshotUrls: 'https://i.gkd.li/i/18492801',
         },
       ],
@@ -363,7 +352,6 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '[vid="adTagView" || vid="adTagViewNew"][clickable=true]',
-          exampleUrls: 'https://e.gkd.li/afb3fc72-7a69-489a-ac5a-7a70f5685667',
           snapshotUrls: [
             'https://i.gkd.li/i/16357208',
             'https://i.gkd.li/i/16357111',
@@ -373,7 +361,6 @@ export default defineGkdApp({
           preKeys: [0],
           key: 90,
           matches: '[text="直接关闭"]',
-          exampleUrls: 'https://e.gkd.li/1e2b2822-01dd-455f-8991-1b746c61c07c',
           snapshotUrls: 'https://i.gkd.li/i/16357210',
         },
       ],

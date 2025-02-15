@@ -32,7 +32,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.bankcomm.module.biz.home.MainActivity',
           matches: '[text="继续使用"]',
-          exampleUrls: 'https://e.gkd.li/b9854883-ed3c-4a55-bd8e-7af7c02d59ba',
           snapshotUrls: 'https://i.gkd.li/i/17556284',
         },
       ],

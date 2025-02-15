@@ -265,7 +265,6 @@ export default defineGkdApp({
         {
           activityIds: 'com.taobao.browser.BrowserActivity',
           matches: '[text="确认授权"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/e6250a9c-3fee-4470-8c7c-1d28ea63d2a5',
           snapshotUrls: 'https://i.gkd.li/i/18271783',
         },
       ],

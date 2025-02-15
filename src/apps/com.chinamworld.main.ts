@@ -28,7 +28,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.ccb.start.MainActivity',
           matches: '[text="知晓风险，继续使用"]',
-          exampleUrls: 'https://e.gkd.li/827582b2-d449-429c-b21d-7277c618d8bf',
           snapshotUrls: 'https://i.gkd.li/i/18113538',
         },
       ],

@@ -30,7 +30,6 @@ export default defineGkdApp({
           key: 1,
           activityIds: '.activity.MainActivity',
           matches: '[text="以后再说"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/79b75132-9d6f-4e4c-a95b-56dbaca1965d',
           snapshotUrls: 'https://i.gkd.li/i/18194356',
         },
       ],
@@ -184,8 +183,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           matches: '@[desc="关闭"] + [text^="关联"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c938001e-f39b-4ece-ad0e-2c93ba41aa94',
           snapshotUrls: 'https://i.gkd.li/i/14717889',
         },
       ],
@@ -200,9 +197,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          action: 'back',
           matches: '[text^="下次打开APP默认进入"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/6166519d-d38d-49c0-b54b-72c25670aa24',
           snapshotUrls: 'https://i.gkd.li/i/15102876',
         },
       ],
@@ -220,7 +216,6 @@ export default defineGkdApp({
           activityIds: '.activity.MainActivity',
           matches:
             '[id="android:id/content"] > FrameLayout[childCount=3] > ImageView[clickable=true][visibleToUser=true][index=2]',
-          exampleUrls: 'https://e.gkd.li/c3889d29-7260-4ab1-8070-75a6a68e4e2c',
           snapshotUrls: 'https://i.gkd.li/i/15314921',
         },
         {
@@ -232,7 +227,6 @@ export default defineGkdApp({
           activityIds: '.activity.MainActivity',
           matches:
             '@FlattenUIImage[text=""] -10 FlattenUIText[text="恭喜获得惊喜奖励"]',
-          exampleUrls: 'https://e.gkd.li/057d40f6-f94e-4b54-857f-b5b11de245a5',
           snapshotUrls: 'https://i.gkd.li/i/17681713',
         },
       ],

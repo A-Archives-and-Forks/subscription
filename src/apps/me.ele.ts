@@ -48,7 +48,6 @@ export default defineGkdApp({
           fastQuery: true,
           matches:
             '@ViewGroup[index=2][clickable=true][childCount=0][index=parent.childCount.minus(1)] <3 ViewGroup[childCount=3] < ViewGroup[childCount=1] < ViewGroup[vid="id_magex_mist_view"]',
-          exampleUrls: 'https://e.gkd.li/a933d63b-14b2-4c91-bdd9-0ba578da6bff',
           snapshotUrls: 'https://i.gkd.li/i/14472929',
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/16346727', // 误触 add [childCount=0]
@@ -152,7 +151,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.application.ui.Launcher.LauncherActivity',
           matches: '[vid="iv_close"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/f706b801-44ee-4009-8082-75c9d4139065',
           snapshotUrls: 'https://i.gkd.li/i/17321305',
         },
       ],

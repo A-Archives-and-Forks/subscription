@@ -86,7 +86,6 @@ export default defineGkdApp({
           ],
           matches:
             'ImageView[childCount=0] < ViewGroup[childCount=1] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup <(1,2) ViewGroup < ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(1,2,3) [parent=null]',
-          exampleUrls: 'https://e.gkd.li/f74b5f58-e518-4e33-bbb4-0bf28e2b79d8',
           snapshotUrls: [
             'https://i.gkd.li/i/17528782',
             'https://i.gkd.li/i/17655498',
@@ -101,7 +100,6 @@ export default defineGkdApp({
           activityIds: '.ui.activity.HomeActivity',
           matches:
             '@ViewGroup[childCount=1][clickable=true] < ViewGroup[childCount=2] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] <2 FrameLayout <2 [parent=null]',
-          exampleUrls: 'https://e.gkd.li/e5428072-9ee3-47e9-87ad-d8b47e24f173',
           snapshotUrls: 'https://i.gkd.li/i/17773799',
         },
         {
@@ -112,7 +110,6 @@ export default defineGkdApp({
           activityIds: '.ui.activity.HomeActivity',
           matches:
             '@ImageView[index=0][vid="pdd"][childCount=0][visibleToUser=true][width<120&&height<120] < RelativeLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [parent=null]',
-          exampleUrls: 'https://e.gkd.li/64f35ab7-37e1-4060-aa91-468116a42cae',
           snapshotUrls: 'https://i.gkd.li/i/18375615',
         },
       ],
@@ -127,7 +124,6 @@ export default defineGkdApp({
           key: 0,
           matches:
             '@TextView[id=null][clickable=true] + Image[id=null][text="webp"]',
-          exampleUrls: 'https://e.gkd.li/20f77125-b223-4d65-b61e-826871e0032b',
           snapshotUrls: 'https://i.gkd.li/i/12642058',
         },
         {
@@ -141,7 +137,6 @@ export default defineGkdApp({
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             'RelativeLayout[childCount=2] > RelativeLayout[vid="pdd"] + @FrameLayout[childCount=1][clickable=true][visibleToUser=true][text=null][vid="pdd"] > ImageView[childCount=0][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/0f850878-2b6a-46c7-86aa-28329df0993c',
           snapshotUrls: 'https://i.gkd.li/i/15140800',
         },
       ],
@@ -155,7 +150,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
           matches: '[vid="iv_float_window_close"]',
-          exampleUrls: 'https://e.gkd.li/f81a45e4-09b4-498f-be72-ca84cdd0db83',
           snapshotUrls: 'https://i.gkd.li/i/14549415',
         },
       ],
@@ -299,7 +293,6 @@ export default defineGkdApp({
         {
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches: ['[text="个性化推荐未开启"]', '[text="取消"]'],
-          exampleUrls: 'https://e.gkd.li/816070f2-035d-4702-87e3-441cca8b5430',
           snapshotUrls: 'https://i.gkd.li/i/14964851',
         },
       ],
@@ -312,7 +305,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.login.LoginActivity',
           matches: ['[text="已获得现金"]', '[text="跳过"]'],
-          exampleUrls: 'https://e.gkd.li/4197b363-3492-4f87-a9dd-109da67bb3bf',
           snapshotUrls: 'https://i.gkd.li/i/17450614',
         },
       ],
