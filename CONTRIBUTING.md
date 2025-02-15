@@ -2,7 +2,7 @@
 
 首先感谢您考虑为我们的项目做出贡献！
 
-秉持 “如无必要，勿增实体” 的原则，**此仓库仅接受与全局规则相关的维护或改进 issues 或 PR 提交。**
+秉持 “如无必要，勿增实体” 的原则，**此仓库仅接受仅接受[适配规则列表](./dist/README.md)内存在的 APP 与全局规则相关的维护或改进 issues 或 PR 提交。**
 
 同时本项目的目标是编写尽量精简通用的规则，所以部分针对APP的规则可能已存在全局规则中，希望您多留意
 
@@ -14,7 +14,7 @@
 
 我们希望您在提交规则之前应该做到以下几点：
 
-- 只维护或改进提交全局规则或, 优化已存在规则。
+- 只维护或改进提交全局规则或优化已存在规则。
 - **非必须勿添加新规则组**，而是考虑将其添加到已存在的规则组 `rules` 中。
 
 同时，我们的最新规则是基于 [dev](https://github.com/aoguai/subscription/tree/dev) 分支的，当你打算贡献规则时应该基于 [dev](https://github.com/aoguai/subscription/tree/dev) 分支 fork 开发，并提交到 [dev](https://github.com/aoguai/subscription/tree/dev) 分支。
