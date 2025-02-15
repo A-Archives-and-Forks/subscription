@@ -43,7 +43,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: ['.lut.act.LutMainActivity', '.start.LoadingActivity'],
           matches:
-            '@ImageView[desc.length=null][clickable=false] < ViewGroup[childCount=1] <<(36,37) [id="com.kwad.dy.sdk:id/ksad_tk_view"]',
+            '@ImageView[desc.length=null][clickable=false] < ViewGroup[childCount=1] <<(36,37) [id$="ksad_tk_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/17690703',
             'https://i.gkd.li/i/17690704',
@@ -53,13 +53,23 @@ export default defineGkdApp({
           key: 6,
           name: '拼多多广告2',
           activityIds: ['.lut.act.LutMainActivity', '.start.LoadingActivity'],
-          matches:
-            '@[desc="top_close_button"] <<n [id="com.kwad.dy.sdk:id/ksad_tk_view"]',
+          fastQuery: true,
+          matches: '@[desc="top_close_button"] <<n [id$="ksad_tk_view"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/17945057',
+            'https://i.gkd.li/i/18810025',
             'https://i.gkd.li/i/18245369',
             'https://i.gkd.li/i/18501469',
+            'https://i.gkd.li/i/18807884',
+            'https://i.gkd.li/i/18810035',
           ],
+        },
+        {
+          key: 7,
+          name: '拼多多广告3',
+          activityIds: ['.lut.act.LutMainActivity', '.start.LoadingActivity'],
+          fastQuery: true,
+          matches: '[vid="ksad_auto_close_btn"]',
+          snapshotUrls: ['https://i.gkd.li/i/18807624'],
         },
       ],
     },

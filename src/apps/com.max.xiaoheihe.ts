@@ -4,7 +4,6 @@ export default defineGkdApp({
   id: 'com.max.xiaoheihe',
   name: '小黑盒',
   groups: [
-    // { key: 0 }, 开屏广告 占位
     {
       key: 1,
       name: '功能类-签到成功弹窗',

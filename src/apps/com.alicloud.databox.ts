@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '功能类-自动签到',
+      desc: '自动点击签到按钮并关闭签到后的弹窗',
       enable: false,
       fastQuery: true,
       matchTime: 10000,
@@ -48,6 +49,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-活动弹窗',
+      desc: '关闭全屏活动弹窗广告',
       enable: false,
       activityIds: 'com.alicloud.databox.MainActivity',
       rules: [
@@ -157,6 +159,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-卡片广告',
+      desc: '关闭卡片式广告',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

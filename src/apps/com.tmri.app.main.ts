@@ -27,5 +27,26 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '通知提示-公告通知弹窗',
+      desc: '关闭公告通知弹窗',
+      enable: false,
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: [
+            'com.tmri.app.ui.activity.main.MainTabHostNewActivity',
+            'com.tmri.app.ui.activity.main.TmriNewActivity',
+          ],
+          action: 'back',
+          matches: '[vid="dialog_content_layout"]',
+          snapshotUrls: ['https://i.gkd.li/i/18810054'],
+        },
+      ],
+    },
   ],
 });
