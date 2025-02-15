@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -60,6 +61,7 @@ export default defineGkdApp({
       key: 11,
       name: '全屏广告-竖屏视频广告',
       desc: '点击右上角[更多]图标按钮,点击不感兴趣',
+      enable: false,
       activityIds: 'com.ss.android.ugc.detail.activity.TikTokActivity',
       rules: [
         {
@@ -92,6 +94,7 @@ export default defineGkdApp({
       key: 12,
       name: '分段广告-信息流广告',
       desc: '点击右上角x按钮,点击[不感兴趣]',
+      enable: false,
       fastQuery: true,
       activityIds: [
         'com.ss.android.article.news.activity.MainActivity',
@@ -140,6 +143,7 @@ export default defineGkdApp({
       key: 14,
       name: '功能类-自动观看广告视频',
       desc: '自动观看广告并等待30s后关闭',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -176,6 +180,7 @@ export default defineGkdApp({
       key: 16,
       name: '功能类-[关联抖音账号]弹窗',
       desc: '点击关闭',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -191,6 +196,7 @@ export default defineGkdApp({
       key: 17,
       name: '功能类-[下次打开APP默认进入发现频道]弹窗',
       desc: '点击取消',
+      enable: false,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -207,6 +213,7 @@ export default defineGkdApp({
       key: 18,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      enable: false,
       rules: [
         {
           key: 0,

@@ -7,7 +7,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-游戏浏览页面推荐广告',
-      desc: '点击[]对此内容不感兴趣]',
+      desc: '点击[对此内容不感兴趣]',
+      enable: false,
       fastQuery: true,
       rules: [
         {

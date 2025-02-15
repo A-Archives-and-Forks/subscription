@@ -8,6 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-卡片广告',
       desc: '点击[X]-点击[直接关闭]/[不感兴趣]',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -117,6 +118,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -160,6 +162,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-VIP弹窗',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -257,6 +260,7 @@ export default defineGkdApp({
       key: 13,
       name: '分段广告-评论区广告',
       desc: '点击[关闭]-点击[不感兴趣]',
+      enable: false,
       fastQuery: true,
       activityIds: [
         'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
@@ -306,6 +310,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '功能类-扫码后自动点击[授权登录]',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -320,6 +325,7 @@ export default defineGkdApp({
       key: 15,
       name: '全屏广告-[获得新徽章]弹窗',
       desc: '点击关闭',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -345,6 +351,7 @@ export default defineGkdApp({
       key: 16,
       name: '分段广告-搜索页广告',
       desc: '该规则触发时会导致输入法收起',
+      enable: false,
       fastQuery: true,
       activityIds:
         'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',

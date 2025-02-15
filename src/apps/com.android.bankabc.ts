@@ -29,6 +29,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -60,6 +61,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '权限提示-通知权限',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

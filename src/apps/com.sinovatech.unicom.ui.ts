@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -23,6 +24,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-弹窗广告',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

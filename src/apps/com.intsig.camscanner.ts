@@ -15,6 +15,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-开通会员', // 该广告在开屏完成后立即弹出
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -37,6 +38,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '通知提示-关闭[发现新截图]提示',
+      enable: false,
       rules: [
         {
           fastQuery: true,

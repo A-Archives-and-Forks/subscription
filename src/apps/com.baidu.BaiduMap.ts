@@ -31,6 +31,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-各类弹窗广告',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -69,6 +70,7 @@ export default defineGkdApp({
       key: 8,
       name: '权限提示-通知权限',
       desc: '点击关闭',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -85,6 +87,7 @@ export default defineGkdApp({
       key: 9,
       name: '功能类-通勤卡添加至桌面',
       desc: '点击取消',
+      enable: false,
       fastQuery: true,
       actionMaximum: 1,
       rules: [

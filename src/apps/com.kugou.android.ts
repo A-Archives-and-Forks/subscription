@@ -94,6 +94,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -125,6 +126,7 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-[看广告免费听歌]弹窗',
       desc: '点击关闭',
+      enable: false,
       rules: [
         {
           activityIds: 'com.kugou.android.app.MediaActivity',
@@ -137,6 +139,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-[开启音乐DJ]弹窗',
       desc: '勾选[今日不再提醒]-点击[关闭]',
+      enable: false,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -178,6 +181,7 @@ export default defineGkdApp({
       key: 6,
       name: '全屏广告-签到弹窗',
       desc: '点击关闭',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -197,6 +201,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '功能类-自动关闭速听模式',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

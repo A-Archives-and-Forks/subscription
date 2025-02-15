@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-红包弹窗',
+      enable: false,
       rules: [
         {
           key: 0,
@@ -59,6 +60,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-活动弹窗',
+      enable: false,
       fastQuery: true,
       rules: [
         {
@@ -110,6 +112,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-付款后弹窗广告',
+      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -123,6 +126,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-吃货卡续费弹窗',
+      enable: false,
       rules: [
         {
           fastQuery: true,

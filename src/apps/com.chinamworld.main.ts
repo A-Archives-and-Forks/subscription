@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-我的页面弹窗广告',
+      enable: false,
       rules: [
         {
           activityIds: 'com.ccb.start.view.startdialog.StartDialogActivity',
@@ -20,6 +21,7 @@ export default defineGkdApp({
       key: 2,
       name: '通知提示-VPN风险弹窗',
       desc: '点击[知晓风险，继续使用]',
+      enable: false,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
