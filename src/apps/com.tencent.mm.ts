@@ -131,12 +131,13 @@ export default defineGkdApp({
         {
           key: 1,
           name: '浏览器扫码登录',
-          matches: ['[text^="获取你的"]', '[text="允许"]'],
+          matches: ['[text^="获取你的"||text^="申请使用"]', '[text="允许"]'],
           snapshotUrls: [
             'https://i.gkd.li/import/13065462', //com.tencent.mm.ui.LauncherUI
             'https://i.gkd.li/import/12663602',
             'https://i.gkd.li/import/14164920',
             'https://i.gkd.li/i/15271716',
+            'https://i.gkd.li/i/18809991',
           ],
         },
         {
@@ -296,7 +297,7 @@ export default defineGkdApp({
           name: '点击「不感兴趣」',
           excludeMatches: '[text="感谢你的反馈"][visibleToUser=true]',
           matches:
-            '[text*="广告"&&text.length<5] <n View < View >n [text="不感兴趣"][visibleToUser=true]',
+            '[text*="广告"&&text.length<5] <<n View >n [text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/17113565', // 在某些情况下，点击“不感兴趣”会导致无法执行下一步操作
             'https://i.gkd.li/i/18702161',
