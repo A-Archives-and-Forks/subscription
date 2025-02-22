@@ -12,8 +12,6 @@ export default tsEslint.config(
     plugins: {
       'unused-imports': unusedImports,
     },
-  },
-  {
     rules: {
       quotes: ['error', 'single', { allowTemplateLiterals: false }],
       'no-unused-vars': 'off',
