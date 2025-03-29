@@ -25,23 +25,22 @@ export default defineGkdApp({
           matches: '[text="领取"][clickable=true][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12929318',
-            'https://i.gkd.li/i/15573070',
             'https://i.gkd.li/i/15942837',
+            'https://i.gkd.li/i/15573070', // 签到前
+            'https://i.gkd.li/i/15573233', // 签到后
           ],
         },
         {
           key: 1,
-          preKeys: [0],
           name: '在签到后，关闭弹窗',
           action: 'back',
           anyMatches: [
             '[vid="ivCardBackBackground"][visibleToUser=true]',
-            '[vid="ivClose"][visibleToUser=true]',
+            '[vid="cvCardFront"] > [vid="ivClose"][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/18108340',
-            'https://i.gkd.li/i/15573070', // 签到前
-            'https://i.gkd.li/i/15573233', // 签到后
+            'https://i.gkd.li/i/19515122',
           ],
         },
       ],
@@ -104,6 +103,7 @@ export default defineGkdApp({
       name: '通知提示-顶端横幅”',
       desc: '出现在首页、备份盘、资源库',
       enable: false,
+      ignoreGlobalGroupMatch: true,
       fastQuery: true,
       activityIds: ['com.alicloud.databox.MainActivity'],
       rules: [
