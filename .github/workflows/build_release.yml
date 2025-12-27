@@ -64,7 +64,7 @@ jobs:
         if: ${{ steps.commit.outcome == 'success' }}
         run: |
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
-          pnpm publish --no-git-checks --publish-branch=custom
+          pnpm publish --no-git-checks
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
 
       - name: sync jsDelivr
