@@ -50,6 +50,11 @@ jobs:
           branch: ${{ github.ref }}
           tags: true
 
+      - name: Generate offline subscription file
+        if: ${{ steps.commit.outcome == 'success' }}
+        run: |
+          cp dist/aoguai_gkd.json5 "dist/gkd-subscription-offline-id86-v${{ steps.version.outputs.version }}.json5"
+
       - name: Create Release
         if: ${{ steps.commit.outcome == 'success' }}
         uses: softprops/action-gh-release@v2
@@ -59,6 +64,8 @@ jobs:
           tag_name: v${{ steps.version.outputs.version }}
           name: Release ${{ steps.version.outputs.version }}
           body_path: ./dist/CHANGELOG.md
+          files: |
+            dist/gkd-subscription-offline-id86-v${{ steps.version.outputs.version }}.json5
 
       - name: Publish package
         if: ${{ steps.commit.outcome == 'success' }}
